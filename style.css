@@ -1,135 +1,136 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: clash display, Satoshi;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family:
+    clash display,
+    Satoshi;
 }
-.container{
-    width: 1200px;
-    margin: 0 auto;
-    
-}
-
-
-
-.priorities{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;  
-    justify-content: center;
-
-
-
-    .priorities-elem{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        row-gap: 13px;
-        h3{
-            font-family: Clash Display;
-font-weight: 400;
-font-style: Regular;
-font-size: 20px;
-leading-trim: NONE;
-line-height: 140%;
-letter-spacing: 0%;
-color: #2A254B;
-        }
-
-        p{
-font-family: Satoshi;
-font-weight: 400;
-font-style: Regular;
-font-size: 16px;
-leading-trim: NONE;
-line-height: 150%;
-letter-spacing: 0%;
-color: #2A254B;
-        }
-    }
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
+.priorities {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
 
-
-.doston{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 100px;
-    h2{
-        font-family: Clash Display;
-font-weight: 400;
-font-style: Regular;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 140%;
-letter-spacing: 0%;
-color: #2A254B;
-    }
-}
-
-.ceramics{
+  .priorities-elem {
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
+    align-items: flex-start;
+    row-gap: 13px;
+    h3 {
+      font-family: Clash Display;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 20px;
+      leading-trim: NONE;
+      line-height: 140%;
+      letter-spacing: 0%;
+      color: #2a254b;
+    }
 
+    p {
+      font-family: Satoshi;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 16px;
+      leading-trim: NONE;
+      line-height: 150%;
+      letter-spacing: 0%;
+      color: #2a254b;
+    }
+  }
 }
 
-
-
-.ceramics-elem{
-
-
-    .first{
-        background-image: url(./img/1.png);
-        
-    }
-    .second{
-        background-image: url(./img/2.png);
-        
-    }
-    .third{
-        background-image: url(./img/3.png);
-
-        
-    }
-
-    .fourth{
-        background-image: url(./img/4.png);
-        
-    }
-
-    
-    
-    
-    
+.doston {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 100px;
+  h2 {
+    font-family: Clash Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #2a254b;
+  }
 }
 
-
-
-.ceramics-photo{
-    width: 305px;
-    height: 375px;
-    background: no-repeat center center/cover;
-
-    
-    
-}
-
-.ceramics-item{
-    display: flex;
-    flex-direction: row;
+.ceramics {
+  display: flex;
+  flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+  row-gap: 50px;
 }
 
+.ceramics-elem {
+  h3 {
+    font-family: Clash Display;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #2a254b;
+  }
+  h4 {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #2a254b;
+  }
 
-.ceramics-btn{
-    width: 150px;
-    height: 50px;
-    background-color: #F9F9F9;
+  .first {
+    background-image: url(./img/1.png);
+  }
+  .second {
+    background-image: url(./img/2.png);
+  }
+  .third {
+    background-image: url(./img/3.png);
+  }
 
-    border: none;
-    cursor: pointer;
+  .fourth {
+    background-image: url(./img/4.png);
+  }
+}
+
+.ceramics-photo {
+  width: 305px;
+  height: 375px;
+  background: no-repeat center center/cover;
+}
+
+.ceramics-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.ceramics-btn {
+  width: 150px;
+  height: 50px;
+  background-color: #f9f9f9;
+
+  border: none;
+  cursor: pointer;
+}
+
+.ceramics-btn:hover {
+    background: linear-gradient(90deg, #d80f0f 0%, #e3ea0b 100%);
+  
 }
