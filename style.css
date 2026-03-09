@@ -73,6 +73,7 @@
 
 .ceramics-elem {
   h3 {
+    margin: 24px 0 8px 0;
     font-family: Clash Display;
     font-weight: 400;
     font-style: Regular;
@@ -108,11 +109,20 @@
   }
 }
 
+
+  .ceramics-photo:hover {
+    filter: brightness(0.88);
+    box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
+
+  }
+
+
 .ceramics-photo {
   width: 305px;
   height: 375px;
   background: no-repeat center center/cover;
-}
+  box-shadow:    21px 5px 12px rgba(0, 0, 0, 0.392);
+  }
 
 .ceramics-item {
   display: flex;
