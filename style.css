@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: clash display, Satoshi;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+
+
+.priorities{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;  
+    justify-content: center;
+
+
+
+    .priorities-elem{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 13px;
+        h3{
+            font-family: Clash Display;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 140%;
+letter-spacing: 0%;
+color: #2A254B;
+        }
+
+        p{
+font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0%;
+color: #2A254B;
+        }
+    }
+}
+
+
+
+.doston{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 100px;
+    h2{
+        font-family: Clash Display;
+font-weight: 400;
+font-style: Regular;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 140%;
+letter-spacing: 0%;
+color: #2A254B;
+    }
+}
+
+.ceramics{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+}
+
+
+
+.ceramics-elem{
+
+
+    .first{
+        background-image: url(./img/1.png);
+        
+    }
+    .second{
+        background-image: url(./img/2.png);
+        
+    }
+    .third{
+        background-image: url(./img/3.png);
+
+        
+    }
+
+    .fourth{
+        background-image: url(./img/4.png);
+        
+    }
+
+    
+    
+    
+    
+}
+
+
+
+.ceramics-photo{
+    width: 305px;
+    height: 375px;
+    background: no-repeat center center/cover;
+
+    
+    
+}
+
+.ceramics-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.ceramics-btn{
+    width: 150px;
+    height: 50px;
+    background-color: #F9F9F9;
+
+    border: none;
+    cursor: pointer;
+}
