@@ -6,12 +6,8 @@
     Satoshi;
 }
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
-}
-
-img{
-  max-width: 100%;
 }
 
 .priorities {
@@ -30,6 +26,7 @@ img{
       font-weight: 400;
       font-style: Regular;
       font-size: 20px;
+      leading-trim: NONE;
       line-height: 140%;
       letter-spacing: 0%;
       color: #2a254b;
@@ -40,6 +37,7 @@ img{
       font-weight: 400;
       font-style: Regular;
       font-size: 16px;
+      leading-trim: NONE;
       line-height: 150%;
       letter-spacing: 0%;
       color: #2a254b;
@@ -58,63 +56,79 @@ img{
     font-weight: 400;
     font-style: Regular;
     font-size: 24px;
+    leading-trim: NONE;
     line-height: 140%;
-    letter-spacing: 0%;
     color: #2a254b;
   }
-}
+  
+  .priorities-elem p {
+    font-family: Satoshi, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2a254b;
+  }
+  
 
-.ceramics {
-  display: flex;
-  flex-direction: column;
+  .ceramics {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-  row-gap: 50px;
-}
-
-.ceramics-elem {
-  h3 {
+    row-gap: 50px;
+  }
+  
+  .ceramics-item {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  .ceramics-elem {
+    flex: 0 0 305px; 
+    max-width: 305px;
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .ceramics-elem h3 {
     margin: 24px 0 8px 0;
-    font-family: Clash Display;
+    font-family: Clash Display, sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
     line-height: 140%;
-    letter-spacing: 0%;
     color: #2a254b;
   }
-  h4 {
-    font-family: Satoshi;
+  
+  .ceramics-elem h4 {
+    font-family: Satoshi, sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 18px;
     line-height: 150%;
-    letter-spacing: 0%;
     color: #2a254b;
   }
-
-  .first {
-    background-image: url(./img/1.png);
+  
+  .ceramics-photo {
+    width: 100%;
+    max-width: 305px;
+    height: 375px;
+    background: no-repeat center center/cover;
+    box-shadow: 21px 5px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    transition: filter 0.2s, box-shadow 0.2s;
   }
-  .second {
-    background-image: url(./img/2.png);
-  }
-  .third {
-    background-image: url(./img/3.png);
-  }
-
-  .fourth {
-    background-image: url(./img/4.png);
-  }
-}
-
-
+  
+  .ceramics-photo.first { background-image: url(./img/1.png); }
+  .ceramics-photo.second { background-image: url(./img/2.png); }
+  .ceramics-photo.third { background-image: url(./img/3.png); }
+  .ceramics-photo.fourth { background-image: url(./img/4.png); }
+  
   .ceramics-photo:hover {
-    filter: brightness(0.88);
-    box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
-
-  }
-   .popular-photo:hover {
     filter: brightness(0.88);
     box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
 
@@ -148,79 +162,4 @@ img{
     background: linear-gradient(90deg, #d80f0f 0%, #e3ea0b 100%);
   
 }
-
-.popular-main{
-   display: flex;
-  flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  row-gap: 50px;
-}
-
-.popular-item{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-}
-
-.popular-photo {
-  height: 375px;
-  background: no-repeat center center/cover;
-  box-shadow:    21px 5px 12px rgba(0, 0, 0, 0.392);
-  }
-
-  
-  .popular-photo-first{
-      height: 375px;
-
-    width: 635px;
-    background: url(./img/sofa.jpg) no-repeat center center/cover ;
-  box-shadow:    21px 5px 12px rgba(0, 0, 0, 0.392);
-  }
-
-  .popular-photo-second{
-      height: 375px;
-width: 305px;
-    background: url(./img/1.png) no-repeat center center/cover;
-  box-shadow:    21px 5px 12px rgba(0, 0, 0, 0.392);
-  }
-
-  .popular-photo-third{
-      height: 375px;
-width: 305px;
-
-    background: url(./img/blackchair.jpg) no-repeat center center/cover;
-  box-shadow:    21px 5px 12px rgba(0, 0, 0, 0.392);
-  }
-
-.popular-photo-first:hover{
-    filter: brightness(0.88);
-        box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
-
-}
-
-.popular-photo-second:hover{
-    filter: brightness(0.88);
-        box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
-
-}
-
-.popular-photo-third:hover{
-    filter: brightness(0.88);
-        box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
-
-}
-
-.popular{
-  h2{
-    font-family: Clash Display;
-font-weight: 400;
-font-style: Regular;
-font-size: 32px;
-leading-trim: NONE;
-line-height: 140%;
-letter-spacing: 0%;
-color: #2A254B;
-  }
 }
