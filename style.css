@@ -26,7 +26,6 @@
       font-weight: 400;
       font-style: Regular;
       font-size: 20px;
-      leading-trim: NONE;
       line-height: 140%;
       letter-spacing: 0%;
       color: #2a254b;
@@ -37,7 +36,6 @@
       font-weight: 400;
       font-style: Regular;
       font-size: 16px;
-      leading-trim: NONE;
       line-height: 150%;
       letter-spacing: 0%;
       color: #2a254b;
@@ -56,7 +54,6 @@
     font-weight: 400;
     font-style: Regular;
     font-size: 24px;
-    leading-trim: NONE;
     line-height: 140%;
     color: #2a254b;
   }
