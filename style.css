@@ -1,146 +1,399 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  font-family:
-    clash display,
-    Satoshi;
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.priorities {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  justify-content: center;
-
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Clash Display', 'Satoshi', sans-serif;
+  }
+  
+  body {
+    background: #f9f9f9;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 24px;
+    color: #2a254b;
+  }
+  
+  .header-icons img,
+  .search-icon img {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+  
+  .nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  
+  .nav a {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    color: #2a254b;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .nav a:hover {
+    color: #6c63ff;
+  }
+  
+  /* HERO */
+  .hero {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 350px;
+  }
+  
+  .hero-content {
+    background: #2a254b;
+    color: #fff;
+    padding: 48px 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 32px;
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+  
+  .hero-content p {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    margin-top: 32px;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  .hero-btn {
+    background: #fff;
+    color: #2a254b;
+    border: none;
+    padding: 12px 32px;
+    font-size: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Satoshi', sans-serif;
+    transition: background 0.2s;
+  }
+  
+  .hero-btn:hover {
+    background: #e3ea0b;
+  }
+  
+  .hero-image {
+    background: #91a7a7;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+  }
+  
+  .hero-image img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+ 
+  .doston {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 48px;
+    padding-bottom: 48px;
+  }
+  
+  .doston > h2 {
+    font-family: Clash Display, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #2a254b;
+    margin: 48px 0 0 0;
+  }
+  
+  .priorities {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
   .priorities-elem {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 13px;
-    h3 {
-      font-family: Clash Display;
-      font-weight: 400;
-      font-style: Regular;
-      font-size: 20px;
-      leading-trim: NONE;
-      line-height: 140%;
-      letter-spacing: 0%;
-      color: #2a254b;
-    }
-
-    p {
-      font-family: Satoshi;
-      font-weight: 400;
-      font-style: Regular;
-      font-size: 16px;
-      leading-trim: NONE;
-      line-height: 150%;
-      letter-spacing: 0%;
-      color: #2a254b;
-    }
+    max-width: 250px;
+    min-width: 180px;
   }
-}
-
-.doston {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 100px;
-  h2 {
-    font-family: Clash Display;
+  
+  .priorities-elem img {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .priorities-elem h3 {
+    font-family: Clash Display, sans-serif;
     font-weight: 400;
-    font-style: Regular;
-    font-size: 24px;
-    leading-trim: NONE;
+    font-size: 20px;
     line-height: 140%;
-    letter-spacing: 0%;
     color: #2a254b;
   }
-}
+  
+  .priorities-elem p {
+    font-family: Satoshi, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2a254b;
+  }
+  
 
-.ceramics {
-  display: flex;
-  flex-direction: column;
+  .ceramics {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-  row-gap: 50px;
-}
-
-.ceramics-elem {
-  h3 {
+    row-gap: 50px;
+  }
+  
+  .ceramics-item {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  .ceramics-elem {
+    flex: 0 0 305px; 
+    max-width: 305px;
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .ceramics-elem h3 {
     margin: 24px 0 8px 0;
-    font-family: Clash Display;
+    font-family: Clash Display, sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
-    leading-trim: NONE;
     line-height: 140%;
-    letter-spacing: 0%;
     color: #2a254b;
   }
-  h4 {
-    font-family: Satoshi;
+  
+  .ceramics-elem h4 {
+    font-family: Satoshi, sans-serif;
     font-weight: 400;
-    font-style: Regular;
     font-size: 18px;
-    leading-trim: NONE;
     line-height: 150%;
-    letter-spacing: 0%;
     color: #2a254b;
   }
-
-  .first {
-    background-image: url(./img/1.png);
+  
+  .ceramics-photo {
+    width: 100%;
+    max-width: 305px;
+    height: 375px;
+    background: no-repeat center center/cover;
+    box-shadow: 21px 5px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    transition: filter 0.2s, box-shadow 0.2s;
   }
-  .second {
-    background-image: url(./img/2.png);
-  }
-  .third {
-    background-image: url(./img/3.png);
-  }
-
-  .fourth {
-    background-image: url(./img/4.png);
-  }
-}
-
-
+  
+  .ceramics-photo.first { background-image: url(./img/1.png); }
+  .ceramics-photo.second { background-image: url(./img/2.png); }
+  .ceramics-photo.third { background-image: url(./img/3.png); }
+  .ceramics-photo.fourth { background-image: url(./img/4.png); }
+  
   .ceramics-photo:hover {
     filter: brightness(0.88);
-    box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
-
+    box-shadow: 11px 4px 15px rgba(0, 0, 0, 0.25);
   }
-
-
-.ceramics-photo {
-  width: 305px;
-  height: 375px;
-  background: no-repeat center center/cover;
-  box-shadow:    21px 5px 12px rgba(0, 0, 0, 0.392);
-  }
-
-.ceramics-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-}
-
-.ceramics-btn {
-  width: 150px;
-  height: 50px;
-  background-color: #f9f9f9;
-
-  border: none;
-  cursor: pointer;
-}
-
-.ceramics-btn:hover {
-    background: linear-gradient(90deg, #d80f0f 0%, #e3ea0b 100%);
   
-}
+  .ceramics-btn {
+    width: 150px;
+    height: 50px;
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+  }
+  
+  .ceramics-btn:hover {
+    background: linear-gradient(90deg, #d80f0f 0%, #e3ea0b 100%);
+  }
+  
+ 
+ /* --- Адаптив --- */
+
+
+@media (max-width: 900px) {
+    .container, .header-top, .nav, .hero {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  
+    .hero {
+      flex-direction: column;
+      margin: 24px auto;
+      min-height: unset;
+    }
+  
+    .hero-image, .hero-content {
+      width: 100%;
+      max-width: 100%;
+      padding: 32px 12px;
+    }
+  
+    .hero-image {
+      justify-content: flex-start;
+      background: #91a7a7;
+      min-height: 180px;
+    }
+  
+    .hero-image img {
+      max-width: 220px;
+      margin: 0 auto;
+    }
+  
+    .priorities {
+      gap: 24px;
+    }
+  
+
+    .ceramics-item {
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 16px;
+      justify-content: center;
+    }
+    .ceramics-elem {
+      flex: 1 1 45%;
+      max-width: 340px;
+      width: 100%;
+    }
+  }
+  
+
+  @media (max-width: 700px) {
+    .header-top {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+    }
+    .nav ul {
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 15px;
+    }
+    .hero-content h1 {
+      font-size: 22px;
+    }
+  }
+  
+
+  @media (max-width: 600px) {
+    .priorities {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  
+    .ceramics-item {
+      flex-direction: column;
+      gap: 20px;
+      flex-wrap: nowrap;
+    }
+    .ceramics-elem {
+      max-width: 340px;
+      width: 100%;
+      margin: 0 auto;
+      flex: 1 1 100%;
+    }
+    .ceramics-photo {
+      height: 220px;
+      max-width: 100%;
+    }
+    .doston > h2 {
+      font-size: 20px;
+    }
+  }
+ 
+  @media (max-width: 400px) {
+    .logo {
+      font-size: 18px;
+    }
+    .hero-content h1 {
+      font-size: 16px;
+    }
+    .ceramics-btn {
+      font-size: 14px;
+      height: 40px;
+      width: 120px;
+    }
+    .priorities-elem h3 {
+      font-size: 16px;
+    }
+    .priorities-elem p {
+      font-size: 13px;
+    }
+  }
