@@ -194,6 +194,33 @@ width: 305px;
   box-shadow:    21px 5px 12px rgba(0, 0, 0, 0.392);
   }
 
-.ceramics-photo:hover{
-  
+.popular-photo-first:hover{
+    filter: brightness(0.88);
+        box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+.popular-photo-second:hover{
+    filter: brightness(0.88);
+        box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+.popular-photo-third:hover{
+    filter: brightness(0.88);
+        box-shadow:    11px 4px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+.popular{
+  h2{
+    font-family: Clash Display;
+font-weight: 400;
+font-style: Regular;
+font-size: 32px;
+leading-trim: NONE;
+line-height: 140%;
+letter-spacing: 0%;
+color: #2A254B;
+  }
 }
